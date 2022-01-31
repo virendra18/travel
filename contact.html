@@ -44,7 +44,9 @@
         <h2>Contact Us</h2>
         <form
       name="contactform"
-      method="POST" data-netlify="true"
+      method="POST" 
+      data-netlify-recaptcha="true"
+      data-netlify="true"
     >
       <input
         name="Name"
@@ -87,6 +89,9 @@
         class="feedback-input"
         placeholder="Query"
       ></textarea>
+
+      <div data-netlify-recaptcha="true"></div>
+
       <input type="submit" value="SUBMIT" />
     </form>
       </section>
