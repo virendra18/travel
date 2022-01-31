@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"> <h1 class="logo">VTravels</h1></a>
+
+      <nav>
+        <ul>
+          <a href="/index.html"><li>Home</li> </a>
+          <a href="./destinations.html" "><li>Destinations</li></a>
+          <a href="./gallery.html" "><li>Gallery</li></a>
+        </ul>
+      </nav>
+      <button class="inquire">
+        <a href="./contact.html">Inquire Now</a>
+      </button>
+    </header>
+
+    <main id="destination">
+      <h2 class="center">Get Full Tour Details</h2>
+      <div class="selector">
+        <select
+          name=""
+          id="selectDestination"
+          class="feedback-input destination"
+        >
+          <option value="Select">Select Your Destination</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Kashmir">Kashmir</option>
+          <option value="Nepal">Nepal</option>
+          <option value="North East">North East</option>
+        </select>
+        <button class="btn" onclick="destination()">Get Details</button>
+      </div>
+    </main>
+
+    <section class="hidden" id="rajasthan">
+      <h1 class="center d-title">Best Of Rajasthan</h1>
+
+      <div class="info-wrapper">
+        <div class="d-left">
+          <div class="d-price-card">
+            <h3>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 29,599/- (Onwards
+              per person)
+            </h3>
+            <h3><i class="fa-solid fa-calendar-days"></i> 10D/9N</h3>
+            <h3><i class="fa-solid fa-plane-departure"></i>Departure: 6pm</h3>
+            <h3>
+              <i class="fa-solid fa-location-dot"></i>
+
+              Location Covered:
+            </h3>
+            <p>
+              Brahma Temple At Pushkar, Dargah Ajmer, Bikaner, Jaisalmer,
+              Jodhpur, Udaipur, Mount Abu, Jaipur
+            </p>
+
+            <button id="d-order">Book Now</button>
+          </div>
+        </div>
+
+        <div class="d-right">
+          <h2 class="centerr">Day Wise Details</h2>
+          <br />
+          <h3>Day 1: Arrival Delhi - Jaipur</h3>
+          <br />
+          <p>
+            Arrive New Delhi airport / railway station and proceed for the Pink
+            City of Jaipur (265 km /5 hrs). En route visit the Amber Fort and
+            enjoy an elephant ride. Upon arrival at Jaipur, transfer to hotel.
+            The evening is free to explore the attractive colourful market of
+            Jaipur.
+          </p>
+          <br />
+          <h3>Day 2: Jaipur - Ajmer - Pushkar</h3>
+          <br />
+          <p>
+            Post breakfast, visit City Palace, Albert Hall, Hawa Mahal, Jantar
+            Mantar. Later, proceed to Ajmer ( 135 km /3 hrs). Visit the famous
+            Dargah of Salim Chisti and then drive to Pushkar (11 km). Here,
+            visit the only Brahma Temple in India and the Pushkar Lake.
+          </p>
+          <br />
+          <h3>Day 3: Pushkar - Udaipur</h3>
+          <br />
+          <p>
+            In the morning drive to Udaipur (286 km/6 hrs). It was the capital
+            of Sawai Dynasty. Upon arrival, check into the hotel. Later, visit
+            the famous Jagdish temple which enshrines a black stone image of
+            Lord Vishnu/ Jagannath - Lord of the universe, City Palace and the
+            Saheliyon ki bari Gardens of the Maidens, on the bank of Pichori
+            Lake. Night Stay
+          </p>
+          <br />
+          <h3>Day 4: Udaipur</h3>
+          <br />
+          <p>
+            After breakfast, visit the famous Jagdish temple, which enshrines a
+            black stone image of Lord Vishnu as Jagannath-Lord of the universe,
+            City Palace, museum and the Saheliyon ki bari - "Gardens of the
+            Maidens".
+          </p>
+          <br />
+
+          <h3>Day 5: Udaipur - Mount Abu</h3>
+          <br />
+
+          <p>
+            In the morning drive to Mount Abu (190 km/ 4.5 hrs), the only hill
+            station in Rajasthan at an altitude of 1,220 m crowning the highest
+            peak of the Aravali hills. Upon arrival, check into hotel. Later,
+            visit the magnificent Dilwara Jain Temple built in 11th century,
+            Sunset point and Nakki Lake.
+          </p>
+          <br />
+
+          <h3>Day 6: Mount Abu - Jodhpur</h3>
+          <br />
+          <p>
+            After breakfast, depart to Jodhpur (325 km/7 hrs) which is the
+            second largest city in Rajasthan. Visit Mehrangarh Fort, Umaid
+            Bhawan Palace Museum.
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 7: Jodhpur - Jaisalmer</h3>
+          <br />
+          <p>
+            In the morning drive towards Jaisalmer (285 km/7 hrs).Upon arrival,
+            check-in hotel. The evening is at leisure.
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 8: Jaisalmer</h3>
+          <br />
+          <p>
+            In the morning visit Jaisalmer Fort, the only fort in India which
+            has a population of thousand people living within its walls. Later,
+            visit the countless havelis spread across Jaisalmer which are
+            reputed as the city's real show pieces. In the evening visit the
+            sand dunes to witness a spectacular sunset over the dunes.
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 9: Jaisalmer - Bikaner</h3>
+          <br />
+          <p>
+            Early morning proceed to Bikaner ( 332 km/7 hrs). Upon arrival,
+            transfer to hotel. Later, visit the unusual Junagarh Fort. Unlike
+            all the major forts of Rajasthan, which are on hilltops, the
+            Junagarh fort was built on the desert plains itself. Lastly, visit
+            the National Research Centre on Camel.
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 10: Bikaner-Delhi</h3>
+          <br />
+          <p>
+            In the morning drive to Delhi (475 km/9 hrs), transfer to
+            airport/railway station for your onward journey.
+          </p>
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <section class="hidden" id="kashmir">
+      <h1 class="center d-title">Best Of Kashmir</h1>
+
+      <div class="info-wrapper">
+        <div class="d-left">
+          <div class="d-price-card">
+            <h3>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 24,799/- (Onwards
+              per person)
+            </h3>
+            <h3><i class="fa-solid fa-calendar-days"></i> 8D/7N</h3>
+            <h3><i class="fa-solid fa-plane-departure"></i>Departure: 3pm</h3>
+            <h3>
+              <i class="fa-solid fa-location-dot"></i>
+
+              Location Covered:
+            </h3>
+            <p>
+              Pahalgam, Vaishno Devi, Gulmarg, Amritsar, Srinagar, Kurukshetra 
+            </p>
+
+            <button id="d-order">Book Now</button>
+          </div>
+        </div>
+
+        <div class="d-right">
+          <h2 class="centerr">Day Wise Details</h2>
+          <br />
+          <h3>Day 1: Delhi - Katra</h3>
+          <br />
+          <p>
+            Departure to Katra (650 kms./ 15-16 hrs.) Night Journey. 
+          </p>
+          <br />
+          <h3>Day 2: Katra - Vaishno Devi - Katra</h3>
+          <br />
+          <p>
+            Arrival at Katra and check into Hotel. After fresh ups and breakfast, proceed to Vaishno Devi Temple (14 kms. one way) by walk / pony / Helicopter Service and return back to Katra. 
+          </p>
+          <br />
+          <h3>Day 3: Katra - Srinagar</h3>
+          <br />
+          <p>
+            Early morning departure to Srinagar (275 kms. / 10 hrs.). Enroute enjoy Kashmir Valley View. Arrival at Srinagar in the evening at 21:00 Hrs. 
+          </p>
+          <br />
+          <h3>Day 4: Srinagar</h3>
+          <br />
+          <p>
+            After breakfast, visit Sri Shankaracharya Temple, Shalimar Gardens, Chasmashahi Gardens, Nishat Bagh Gardens and take a Shikara boat ride on the Dal lake, covering Nehru Park and Char Chinar. 
+          </p>
+          <br />
+
+          <h3>Day 5:Srinagar - Gulmarg - Srinagar</h3>
+          <br />
+
+          <p>
+            Morning proceed to Gulmarg (58 kms. / 2 hrs.). Visit Golf Course and experience the longest cable car ride up to Khilanmarg Snow Point. Later drive back to Srinagar at 16:00 Hrs. 
+          </p>
+          <br />
+
+          <h3>Day 6: Srinagar - Pahalgam - Jammu</h3>
+          <br />
+          <p>
+            After breakfast, proceed to Pahalgam (97 kms. / 2.5 hrs.), the valley of Shepherds, enroute visit Avantipur ruins and view saffron fields. Later proceed to Katra (280 kms./ 7.5 hrs.)/Jammu. 
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 7: Jammu - Amritsar</h3>
+          <br />
+          <p>
+            Post breakfast proceed to Amritsar (270 kms./ 7 hrs.). Visit Golden Temple, Jalianwala Bagh and leave for Indo-Pak Wagha Border (32 kms.) and back to Hotel. Overnight stay. 
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 8: Amritsar - Delhi (Via) Kurukshetra</h3>
+          <br />
+          <p>
+            Departure to Delhi(475Kms/10Hrs). Enroute visit Kurukshetra Reach Delhi around 21.00 hrs. 
+          </p>
+          <br />
+
+        </div>
+      </div>
+    </section>
+<!-- nepal -->
+    <section class="hidden" id="nepal">
+      <h1 class="center d-title">Explore Nepal</h1>
+
+      <div class="info-wrapper">
+        <div class="d-left">
+          <div class="d-price-card">
+            <h3>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 47,799/- (Onwards
+              per person)
+            </h3>
+            <h3><i class="fa-solid fa-calendar-days"></i> 8D/7N</h3>
+            <h3><i class="fa-solid fa-plane-departure"></i>Departure: 3pm</h3>
+            <h3>
+              <i class="fa-solid fa-location-dot"></i>
+
+              Location Covered:
+            </h3>
+            <p>
+              Kathmandu, Patan, Chitwan National Park,   Pokhara,Manakamana Temple, Pashupatinath and Boudhanath Temple
+
+        
+            </p>
+
+            <button id="d-order">Book Now</button>
+          </div>
+        </div>
+
+        <div class="d-right">
+          <h2 class="centerr">Day Wise Details</h2>
+          <br />
+          <h3>Day 1: Kathmandu</h3>
+          <br />
+          <p>
+           Welcome to Kathmandu and the start of your holiday! You’ll be met and transferred to your hotel where you will receive a welcome drink and a briefing about your trip. 
+          </p>
+          <br />
+          <h3>Day 2: Patan</h3>
+          <br />
+          <p>
+            This morning we visit Bodhnath stupa, a beautiful Buddhist worship site with spinning prayer wheels and prostrating pilgrims. Our next stop is the ancient city of Bhaktapur, Nepal’s cultural gem.Our final stop is Patan, the old Newari city with a historic Durbar Square full of temples.   </p>
+          <br />
+          <h3>Day 3: Chitwan National Park</h3>
+          <br />
+          <p>
+            Chitwan is hailed as one of Asia’s finest game parks, home to more than 500 species including the endangered one horned rhino and the elusive Bengal tiger. Other activities at the lodge include a local village walk and nature walks in the jungle, a scenic dugout canoe ride down the Rapti River, bird watching and a visit to the Crocodile Breeding Centre. We'll also watch a traditional Tharu dance performance one evening with dinner.   </p>
+          <br />
+          <h3>Day 4: Pokhara</h3>
+          <br />
+          <p>
+            
+This morning we watch a beautiful sunrise at the hill top World Peace Pagoda which offers spectacular views of the Annapurna range. Then we take a scenic 2 hour walk through Raniban forest back down to Lake Phewa where we enjoy a boat ride across the lake. Our sightseeing continues with an excursion to the beautiful Devi's waterfall and the spectacular Seti Gorge, where the Seti River has carved a 200m deep chasm through the Pokhara Valley. 
+              </p>
+          <br />
+
+          <h3>Day 5: More Kathmandu Exploration</h3>
+          <br />
+
+          <p>
+          This morning we take the short flight back to Kathmandu and in the afternoon we explore more of the city. After visiting the beautiful Swayambhunath stupa which offers wonderful views of the city, we walk to Kathmandu Durbar Square, which is home to over 50 stunning temples and shrines.   </p>
+          <br />
+
+          <h3>Day 6: Back To Delhi</h3>
+          <br />
+          <p>
+            In the evening the tour concludes and back to Delhi
+          </p>
+          <br />
+
+          <br />
+         
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- North East -->
+    <section class="hidden" id="northeast">
+      <h1 class="center d-title">Beauty Of North East</h1>
+
+      <div class="info-wrapper">
+        <div class="d-left">
+          <div class="d-price-card">
+            <h3>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 28,799/- (Onwards
+              per person)
+            </h3>
+            <h3><i class="fa-solid fa-calendar-days"></i> 8D/7N</h3>
+            <h3><i class="fa-solid fa-plane-departure"></i>Departure: 1pm</h3>
+            <h3>
+              <i class="fa-solid fa-location-dot"></i>
+
+              Location Covered:
+            </h3>
+            <p>
+              Darjeeling, Gangtok, Kalimpong, Pelling 
+            </p>
+
+            <button id="d-order">Book Now</button>
+          </div>
+        </div>
+
+        <div class="d-right">
+          <h2 class="centerr">Day Wise Details</h2>
+          <br />
+          <h3>Day 1: Arrive Gangtok</h3>
+          <br />
+          <p>
+            Pickup from Bagdogra Airport. Up On arrival depart to Gangtok (125 km / 4.5 hrs) – Transfer to Hotel. Leisure in the evening. Overnight stay.
+          </p>
+          <br />
+          <h3>Day 2: Gangtok</h3>
+          <br />
+          <p>
+            Local visit Ganesh Tok, Hanuman Tok, Enchey Monastery, Institute of Tibetology, Flower show, white hall, Cottage Industries, Lingdum Monastery, Tashi view point, Ropeway ride and Tashi viewpoint. Overnight stay. </p>
+          <br />
+          <h3>Day 3: Gangtok</h3>
+          <br />
+          <p>
+            Local visit Tsomgo Lake, Baba Mandir at the height of 13500 ft.          </p>
+          <br />
+          <h3>Day 4: Gangtok - Pelling</h3>
+          <br />
+          <p>
+            Departure to Pelling (120 km / 5 hrs). Local visit Kanchanjunga Waterfalls, Rock Gardens, Kachepere Lake and Penyang se, RabdempcyRuyn Overnight stay. Note: Entire sightseeing is based on time permit basis.
+          </p>
+          <br />
+
+          <h3>Day 5:Pelling - Kalimpong</h3>
+          <br />
+
+          <p>
+            Departure to Kalimpong (92 km / 3.5 hrs). Upon arrival transfer to Hotel. Local visits. Orchid House, Doctor Graham’s House, Durbin Dhara and Delo. Overnight stay. Note: Entire sightseeing is based on time permit basis.
+            </p>
+          <br />
+
+          <h3>Day 6: Kalimpong - Darjeeling</h3>
+          <br />
+          <p>
+            Departure to Darjeeling (51 km / 3 hrs). Upon arrival, transfer to Hotel. Evening at Leisure. Overnight stay.
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 7: Darjeeling</h3>
+          <br />
+          <p>
+            Early Morning visit Tiger Hills and Ghoom Monastery and Batasia Loop. Later visit Himalayan Mountaineering Institute, Himalayan Zoo, Japanese Garden , Tibetan Handicraft Centre, Refugee Camp, Tenzing Rock. Enroute you will have a spectacular view of Darjeeling Tea Garden. Overnight stay. </p>
+          <br />
+
+          <br />
+          <h3>Day 8: Darjeeling - Bagdogra Airport</h3>
+          <br />
+          <p>
+           Transfer to Bagdogra Airport for onward journey, en-route visit Pashupati Market (Nepal Border) and Mirik Lake (Natural Lake), surrounded by mountains and pine trees </p>
+          <br />
+
+        </div>
+      </div>
+    </section>
+
+ 
+
+    <footer>
+      <div class="know-more">
+        <h3>Know More</h3>
+
+        <ul>
+          <li>About Us</li>
+          <li><a href="contact.html" target="_blank">Contact Us</a></li>
+          <li>Travel Guides</li>
+          <li>Terms and Conditions</li>
+        </ul>
+      </div>
+
+      <div class="address">
+        <h3>Contact Us</h3>
+        <p>+919345896399</p>
+        <p>Zonal Market, Sector 10</p>
+        <p>Bhilai, Chhattisgarh</p>
+      </div>
+
+      <div class="social-media">
+        <h3>Follow Us on Social Media</h3>
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-2x fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank">
+          <i class="fa-brands fa-2x fa-twitter"></i
+        ></a>
+        <a href="https://youtube.com" target="_blank">
+          <i class="fa-brands fa-2x fa-youtube"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-2x fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
